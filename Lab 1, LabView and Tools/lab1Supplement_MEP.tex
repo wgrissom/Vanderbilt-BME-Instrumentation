@@ -1,0 +1,97 @@
+\documentclass[12pt]{article}
+
+
+%%% PACKAGES
+
+\usepackage[pdftex]{graphicx}
+
+\usepackage{hyperref}
+\usepackage{bibentry} %to use intext full bibliography entries instead of citations.  You will need a separate BibTex database for this to work.  See http://cst.usc.edu/services/tel/grants/legrants.html for details on this package.
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+%\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+%\usepackage{subfigure} % make it possible to include more than one captioned figure/table in a single float
+
+
+\usepackage{caption}
+
+\usepackage{color}
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions. Read ftp://ftp.tex.ac.uk/tex-archive/macros/latex/contrib/geometry/geometry.pdf for detailed page layout information 
+\geometry{margin=1in} % for example, change the margins to 1 inches all round
+%\geometry{landscape} % set up the page for landscape
+% 
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0.4pt} % customise the layout...
+%\lhead{}\chead{}\rhead{}
+%\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%\rfoot{\footnotesize SIR 330}
+\rhead{\footnotesize BME 3300 Lab 1 Supplemental Documentation}
+\renewcommand\footrulewidth{0pt}
+
+
+%%%% BEGIN DOCUMENT
+\begin{document}
+%\thispagestyle{plain} %alternatively specify empty to get no footer on first page.  This is part of the fancyhdr package
+\noindent
+%\textbf{BME 3300 Lab 1: Supplemental Documentation}\\\\
+This document details corrections and additions to the old manual version provided in the lab. The general format of the manual is correct but occasionally menu options have moved locations with the upgraded version of LabView.  Either follow the tips below or search around when a particular instruction in the manual does not make sense.
+\\
+\textbf{You will want to save all of your files in the proper folder on the desktop as well as keep a backup via USB drive or cloud storage}\\\\
+\textbf{Part I:}\\\\
+\indent\textbf{Creating VIs from manual}
+\begin{enumerate}
+  \item Opening a new VI from template
+  \begin{enumerate}
+  	\item Chapter 1 - VI can be found in \textbf{VI$>>$From Template$>>$Simulated$>>$Generate and Display}. 
+  \end{enumerate}
+  \item Chapter 3 - Analyzing and Saving a signal
+  \begin{enumerate}
+  		\item The template VI from which to conduct the exercise can be found from the TA, it is no longer on the computer.
+\end{enumerate}  
+  \item Chapter 4 - Creating an NI-DAQmx Task
+  \begin{enumerate}
+  		\item You will need to use a BNC cable to connect the DAQ function generator to the chosen input channel on your DAQ board.
+  		\item You can stop modifying your diagram when you get to the "Communicating with an Instrument" section.  Please skim the following sections of the chapter for reference in the future.
+\end{enumerate}
+\end{enumerate}
+
+\textbf{Create your own DAQ Module}
+\begin{enumerate}
+  \item You will need to use the BNC cables, your DAQ board, and your oscilloscope to complete this section
+ 
+  \end{enumerate}
+  
+\noindent\textbf{Part 2:}\\
+\\
+\indent\textbf{Task 1: Soldering}
+\begin{enumerate}
+  \item Be careful with the iron, the hot tip WILL give you 2nd degree burns and that's no fun.
+  \item Don't breath in the solder
+  \item More soldering tips can be found by Googling or asking the TA
+\end{enumerate}
+
+\textbf{Task 2: Resistor sorting}
+\begin{enumerate}
+  \item Be sure to check your readings with the multimeter
+\end{enumerate}
+
+\textbf{Task 3: Filter}
+\begin{enumerate}
+  \item If you've never used a breadboard before check out the diagram on the board for reference
+  \item Please don't solder into the solderless bread boards
+  \item If you can't see a signal on the oscilloscope make sure it is on and that the BNC cable is plugged into the correct channel. Also try turning the amplitude/x/y position up and down to see if the signal appears.
+\end{enumerate}
+
+\textbf{Task 4: LED Circuit}
+\begin{enumerate}
+  \item See the diagram on the board for hints as to how the LEDs leads are oriented (or if your LED doesn't light but you think your circuit is right, trying flipping the LED 180$^{\circ}$).
+\end{enumerate}
+
+\end{document}
