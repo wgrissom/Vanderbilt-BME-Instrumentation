@@ -105,7 +105,7 @@ be generated. \underline{As you finish them, show them to the TA.}
 	\item Let's get some more practice getting signals into your DAQ board. You will need BNC cables, your DAQ board, and your oscilloscope to complete this section. Create your own Data Acquisition module by doing the following:
 	\begin{enumerate}[i.]
 		\item In the Start Up screen, click on the \textbf{New...} button and open a \textbf{Blank VI}.
-		\item Use the function generator on the National Instruments connector box to generate a sine wave in the 100-10 kHz range. Confirm that you see the sine wave on your oscilloscope.
+		\item Use the function generator on the National Instruments connector box to generate a sine wave in the 100-10 kHz range. Set the frequency knob close to the middle position. Confirm that you see a sine wave on your oscilloscope, with a frequency close to 1.4 kHz.
 		\item Use a BNC connector cable to input this sine wave into the analog input channel 0 (\textbf{ACH0}). Check to make sure that the switch above the input is on \textbf{BNC}, and that the switch below the channel is on \textbf{FS}.
 		\item Right-click on the Block Diagram and choose \textbf{Programming} $\rightarrow$ \textbf{Structures} $\rightarrow$ \textbf{While Loop} to create a While Loop. Make it larger.
 		\item Right click on the stop button in the lower right corner and select {\bf Create Control}. Notice how a stop button is now placed on the front panel.
@@ -128,12 +128,11 @@ be generated. \underline{As you finish them, show them to the TA.}
 	\begin{enumerate}[i.] 
 		\item Right-click on the \textbf{data} arrow of the DAQ Assistant, select \textbf{Create}, and then select
 \textbf{Graph Indicator}. This creates a \textbf{Waveform Graph} to view the input from the LabVIEW function generator of the connector box. Your Block Diagram should now look similar to Fig. \ref{fig:2}.
-		\item Run the program. Notice that the sine waves of the waveform are not clear, and that
-adjusting the Amplitude and Frequency knobs on the connector box do not help to distinguish them.
+		\item Run the program. Notice that the sine wave is not clear and that changing the Amplitude knob does not make it better.
 		\item Stop the program and right-click on the DAQ Assistant. Select \textbf{Properties}. Reduce
 the \textbf{Samples to Read} value to 200, and reduce the sampling frequency to 200 Hz.
-		\item \textbf{Q}: Explain to the TA why the sine waves look more distinguishable now.
 		\item Run the program again and observe the clearer waveform.
+		\item \textbf{Q}: Explain to the TA why the sine waves look more distinguishable now.
 	\end{enumerate}
 	
 	\begin{figure}[!ht]
